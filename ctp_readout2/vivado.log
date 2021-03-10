@@ -1,0 +1,210 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 10 08:34:42 2021
+# Process ID: 11640
+# Current directory: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2128 C:\Users\Simone Ragoni\alice\CtpReadout\ctp_readout2\ctp_readout2.xpr
+# Log file: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/vivado.log
+# Journal file: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 770.746 ; gain = 170.605
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xcku040-ffva1156-2-e
+Top: top_tc_statemachine
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 854.875 ; gain = 60.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_tc_statemachine' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:56]
+	Parameter g_NUM_BITS_ON_GBT_WORD bound to: 76 - type: integer 
+	Parameter bits_to_get bound to: 76 - type: integer 
+INFO: [Synth 8-3491] module 'packer' declared at 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:37' bound to instance 'input_data_packer' of component 'packer' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'packer' [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:56]
+	Parameter bits_to_get bound to: 76 - type: integer 
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:94]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:125]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:127]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:154]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:156]
+WARNING: [Synth 8-614] signal 'clk_en_i' is read in the process but is not in the sensitivity list [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element store_count_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element write_flag_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element new_store_count_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'packer' (1#1) [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:56]
+INFO: [Synth 8-3491] module 'tc_fifo' declared at 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/.Xil/Vivado-11640-DESKTOP-T9I20SI/realtime/tc_fifo_stub.vhdl:5' bound to instance 'tc_fifo_inst' of component 'tc_fifo' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'tc_fifo' [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/.Xil/Vivado-11640-DESKTOP-T9I20SI/realtime/tc_fifo_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'buffer_fifo' declared at 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:37' bound to instance 'buffer_from_fifo' of component 'buffer_fifo' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'buffer_fifo' [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:47]
+WARNING: [Synth 8-614] signal 's_store_count' is read in the process but is not in the sensitivity list [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:89]
+WARNING: [Synth 8-6014] Unused sequential element store_count_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'buffer_fifo' (2#1) [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:47]
+INFO: [Synth 8-3491] module 'tc_statemachine' declared at 'C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:18' bound to instance 'tc_state_machine' of component 'tc_statemachine' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'tc_statemachine' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element trgmaskedpre_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:399]
+WARNING: [Synth 8-6014] Unused sequential element trgmaskedorpre_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:405]
+WARNING: [Synth 8-6014] Unused sequential element TTVALID_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:418]
+WARNING: [Synth 8-6014] Unused sequential element s_trgd_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:438]
+WARNING: [Synth 8-6014] Unused sequential element s_last_ttype_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:911]
+WARNING: [Synth 8-6014] Unused sequential element s_last_orbit_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:912]
+WARNING: [Synth 8-6014] Unused sequential element s_last_bc_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:913]
+WARNING: [Synth 8-6014] Unused sequential element s_hborbit_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:925]
+WARNING: [Synth 8-6014] Unused sequential element s_hbbc_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:926]
+WARNING: [Synth 8-6014] Unused sequential element s_last_trgorbit_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:940]
+WARNING: [Synth 8-6014] Unused sequential element s_last_trgbc_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:941]
+WARNING: [Synth 8-3848] Net i_ev_size in module/entity tc_statemachine does not have driver. [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'tc_statemachine' (3#1) [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'top_tc_statemachine' (4#1) [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:56]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[118]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[117]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[116]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[115]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[114]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[113]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[112]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[111]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[110]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[109]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[108]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[107]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[106]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[105]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[104]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[103]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[102]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[101]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[100]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[99]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[98]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[97]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[96]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[95]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[94]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[93]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[92]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[91]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[90]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[89]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[88]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[87]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[86]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[85]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[84]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[83]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[82]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[81]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[80]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[79]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[78]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[77]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[76]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[75]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[74]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[73]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[72]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[71]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[70]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[69]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[68]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[67]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[66]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[65]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[64]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[63]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[62]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[61]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[60]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[59]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[58]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[57]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[56]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[55]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[54]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[53]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[52]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[51]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[50]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[49]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[48]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[47]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[46]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[45]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[44]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[43]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[42]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[41]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[40]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[39]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[38]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[37]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[36]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[35]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[34]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[33]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[32]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[31]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[30]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[29]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[28]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[27]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[26]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[25]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[24]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[23]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[22]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[21]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[20]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[19]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 904.426 ; gain = 110.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 904.426 ; gain = 110.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 904.426 ; gain = 110.195
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/ip/tc_fifo/tc_fifo.dcp' for cell 'tc_fifo_inst'
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/ip/tc_fifo/tc_fifo.xdc] for cell 'tc_fifo_inst/U0'
+Finished Parsing XDC File [c:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/ip/tc_fifo/tc_fifo.xdc] for cell 'tc_fifo_inst/U0'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1486.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 2 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1642.582 ; gain = 848.352
+26 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1642.582 ; gain = 848.625

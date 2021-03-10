@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Simone Ragoni/alice/CtpReadout/hdl/cont_sap.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cont_sap'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Simone Ragoni/alice/CtpReadout/hdl/ddg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ddg'

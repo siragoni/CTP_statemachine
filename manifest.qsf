@@ -1,0 +1,7 @@
+set script_path [ file dirname [ file normalize [ info script ] ]]
+puts $script_path
+
+set_global_assignment -name VHDL_FILE $script_path/hdl/cont_sap.vhd
+set_global_assignment -name VHDL_FILE $script_path/hdl/cont_data_stream.vhd
+set_global_assignment -name VHDL_FILE $script_path/hdl/ddg.vhd
+set_global_assignment -name VHDL_FILE $script_path/../COMMON/hdl/prsg.vhd

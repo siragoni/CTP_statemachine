@@ -1,0 +1,1210 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Feb 11 08:25:43 2021
+# Process ID: 11120
+# Current directory: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11380 C:\Users\Simone Ragoni\alice\CtpReadout\ctp_readout2\ctp_readout2.xpr
+# Log file: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/vivado.log
+# Journal file: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 757.309 ; gain = 158.648
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 11 08:30:35 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 08:32:15 on Feb 11,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 08:32:16 on Feb 11,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 08:32:16 on Feb 11,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 08:32:16 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 08:32:16 on Feb 11,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 08:32:16 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '2' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 08:32:17 on Feb 11,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found 28 design-units (out of 31) may be reused.
+# Optimizing 3 design-units (inlining 1/3 module instances, 0/112 architecture instances):
+# -- Optimizing architecture rtl of tc_statemachine
+# -- Optimizing architecture Behavioral of top_tc_statemachine
+# -- Optimizing architecture Behavioral of TC_statemachine_tb
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 08:32:18 on Feb 11,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=8780)
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 835.383 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 11 08:34:45 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 08:43:08 on Feb 11,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 08:43:08 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 08:43:08 on Feb 11,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 08:43:08 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 08:43:08 on Feb 11,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 08:43:08 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '2' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 08:43:10 on Feb 11,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found 28 design-units (out of 31) may be reused.
+# Optimizing 3 design-units (inlining 1/3 module instances, 0/112 architecture instances):
+# -- Optimizing architecture rtl of tc_statemachine
+# -- Optimizing architecture Behavioral of top_tc_statemachine
+# -- Optimizing architecture Behavioral of TC_statemachine_tb
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 08:43:11 on Feb 11,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=5704)
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 11 09:00:50 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 09:03:21 on Feb 11,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 09:03:21 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 09:03:21 on Feb 11,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 09:03:21 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 09:03:21 on Feb 11,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 09:03:21 on Feb 11,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '2' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 09:03:23 on Feb 11,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found 28 design-units (out of 31) may be reused.
+# Optimizing 3 design-units (inlining 1/3 module instances, 0/112 architecture instances):
+# -- Optimizing architecture rtl of tc_statemachine
+# -- Optimizing architecture Behavioral of top_tc_statemachine
+# -- Optimizing architecture Behavioral of TC_statemachine_tb
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 09:03:24 on Feb 11,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=12120)
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+CRITICAL WARNING: [HDL 9-806] Syntax error near "open". [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:270]
+[Thu Feb 11 09:28:37 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+reset_run synth_1
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:06:24 on Feb 17,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 13:06:24 on Feb 17,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:06:24 on Feb 17,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 13:06:24 on Feb 17,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:06:24 on Feb 17,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 13:06:24 on Feb 17,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '1' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 13:06:25 on Feb 17,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 13:06:26 on Feb 17,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=7700)
+close [ open {C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd} w ]
+add_files {{C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 25 17:02:02 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:03:14 on Feb 25,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 17:03:14 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:03:14 on Feb 25,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity buffer_fifo
+# -- Compiling architecture Behavioral of buffer_fifo
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 17:03:14 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:03:14 on Feb 25,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 17:03:14 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '3' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:03:16 on Feb 25,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity buffer_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture Behavioral of buffer_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found 28 design-units (out of 32) may be reused.
+# Optimizing 4 design-units (inlining 1/3 module instances, 0/113 architecture instances):
+# -- Optimizing architecture rtl of tc_statemachine
+# -- Optimizing architecture Behavioral of top_tc_statemachine
+# -- Optimizing architecture Behavioral of TC_statemachine_tb
+# -- Optimizing architecture Behavioral of buffer_fifo
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 17:03:17 on Feb 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=2876)
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 888.832 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 25 17:07:56 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:09:06 on Feb 25,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 17:09:06 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:09:06 on Feb 25,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity buffer_fifo
+# -- Compiling architecture Behavioral of buffer_fifo
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 17:09:06 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:09:06 on Feb 25,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 17:09:06 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '1' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:09:07 on Feb 25,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity buffer_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture Behavioral of buffer_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found 29 design-units (out of 32) may be reused.
+# Optimizing 3 design-units (inlining 1/3 module instances, 0/113 architecture instances):
+# -- Optimizing architecture rtl of tc_statemachine
+# -- Optimizing architecture Behavioral of top_tc_statemachine
+# -- Optimizing architecture Behavioral of TC_statemachine_tb
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 17:09:08 on Feb 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=6664)
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 25 17:52:29 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:53:40 on Feb 25,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 17:53:40 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:53:40 on Feb 25,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity buffer_fifo
+# -- Compiling architecture Behavioral of buffer_fifo
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 17:53:41 on Feb 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:53:41 on Feb 25,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 17:53:41 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '2' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 17:53:42 on Feb 25,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity buffer_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture Behavioral of buffer_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found 29 design-units (out of 32) may be reused.
+# Optimizing 3 design-units (inlining 1/3 module instances, 0/113 architecture instances):
+# -- Optimizing architecture Behavioral of top_tc_statemachine
+# -- Optimizing architecture Behavioral of TC_statemachine_tb
+# -- Optimizing architecture Behavioral of buffer_fifo
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 17:53:43 on Feb 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=2552)
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 25 18:00:02 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Feb 25 18:01:38 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/runme.log
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 18:02:49 on Feb 25,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 18:02:50 on Feb 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 18:02:50 on Feb 25,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity buffer_fifo
+# -- Compiling architecture Behavioral of buffer_fifo
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 18:02:50 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 18:02:50 on Feb 25,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 18:02:50 on Feb 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '1' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 18:02:51 on Feb 25,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity buffer_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture Behavioral of buffer_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found 29 design-units (out of 32) may be reused.
+# Optimizing 3 design-units (inlining 1/3 module instances, 0/113 architecture instances):
+# -- Optimizing architecture Behavioral of top_tc_statemachine
+# -- Optimizing architecture Behavioral of TC_statemachine_tb
+# -- Optimizing architecture Behavioral of buffer_fifo
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 18:02:52 on Feb 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=6960)
+launch_simulation -install_path C:/questasim64_10.6c/win64
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'Questa' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-Questa-47] Finding simulator installation...
+INFO: [USF-Questa-50] Using simulator executables from 'C:/questasim64_10.6c/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-Questa-7] Finding pre-compiled libraries...
+INFO: [USF_Questa-11] File 'C:/Users/Simone Ragoni/questalib_106c/modelsim.ini' copied to run dir:'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+INFO: [SIM-utils-54] Inspecting design source files for 'TC_statemachine_tb' in fileset 'sim_1'...
+INFO: [USF-Questa-107] Finding global include files...
+INFO: [USF-Questa-108] Finding include directories and verilog header directory paths...
+INFO: [USF-Questa-109] Fetching design files from 'sim_1'...
+INFO: [USF-Questa-2] Questa::Compile design
+INFO: [USF-Questa-15] Creating automatic 'do' files...
+INFO: [USF-Questa-69] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "questa_lib/work".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "questa_lib/msim/xil_defaultlib".
+# QuestaSim-64 vmap 10.6c Lib Mapping Utility 2017.07 Jul 26 2017
+# vmap xil_defaultlib questa_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 10:05:04 on Feb 26,2021
+# vlog -64 -incr -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/ip/tc_fifo/sim/tc_fifo.v 
+# -- Skipping module tc_fifo
+# 
+# Top level modules:
+# 	tc_fifo
+# End time: 10:05:04 on Feb 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# QuestaSim-64 vcom 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 10:05:04 on Feb 26,2021
+# vcom -64 -93 -work xil_defaultlib ../../../../ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd ../../../../ctp_readout2.srcs/sources_1/new/packer.vhd ../../../../../hdl/tc_statemachine.vhd ../../../../../hdl/top_tc_statemachine.vhd ../../../../ctp_readout2.srcs/sim_1/new/TC_statemachine_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity buffer_fifo
+# -- Compiling architecture Behavioral of buffer_fifo
+# -- Compiling entity packer
+# -- Compiling architecture Behavioral of packer
+# -- Compiling entity tc_statemachine
+# -- Compiling architecture rtl of tc_statemachine
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity top_tc_statemachine
+# -- Compiling architecture Behavioral of top_tc_statemachine
+# -- Compiling entity TC_statemachine_tb
+# -- Compiling architecture Behavioral of TC_statemachine_tb
+# End time: 10:05:04 on Feb 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 10:05:04 on Feb 26,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 10:05:04 on Feb 26,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'compile' step finished in '1' seconds
+INFO: [USF-Questa-3] Questa::Elaborate design
+INFO: [USF-Questa-69] Executing 'ELABORATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Reading C:/questasim64_10.6c/tcl/vsim/pref.tcl
+
+# 10.6c
+
+# do {TC_statemachine_tb_elaborate.do}
+# QuestaSim-64 vopt 10.6c Compiler 2017.07 Jul 26 2017
+# Start time: 10:05:05 on Feb 26,2021
+# vopt "+acc=npr" -L fifo_generator_v13_2_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -work xil_defaultlib xil_defaultlib.TC_statemachine_tb xil_defaultlib.glbl -o TC_statemachine_tb_opt 
+# 
+# Top level modules:
+# 	TC_statemachine_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity TC_statemachine_tb
+# -- Loading architecture Behavioral of TC_statemachine_tb
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading entity top_tc_statemachine
+# -- Loading architecture Behavioral of top_tc_statemachine
+# -- Loading entity packer
+# -- Loading package vl_types
+# -- Loading entity tc_fifo
+# -- Loading entity buffer_fifo
+# -- Loading entity tc_statemachine
+# -- Loading architecture Behavioral of packer
+# -- Loading module tc_fifo
+# -- Loading architecture Behavioral of buffer_fifo
+# -- Loading architecture rtl of tc_statemachine
+# -- Loading module glbl
+# -- Loading architecture FIFO18E2_V of FIFO18E2
+# -- Loading package body VPKG
+# -- Loading architecture FIFO36E2_V of FIFO36E2
+# -- Loading architecture FIFO18E1_V of FIFO18E1
+# -- Loading entity FF18_INTERNAL_VHDL
+# -- Loading architecture FF18_INTERNAL_VHDL_V of FF18_INTERNAL_VHDL
+# -- Loading architecture FIFO36E1_V of FIFO36E1
+# -- Loading entity FF36_INTERNAL_VHDL
+# -- Loading architecture FF36_INTERNAL_VHDL_V of FF36_INTERNAL_VHDL
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is TC_statemachine_tb_opt
+# End time: 10:05:06 on Feb 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+INFO: [USF-Questa-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-Questa-4] Questa::Simulate design
+INFO: [USF-Questa-69] Executing 'SIMULATE' step in 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.sim/sim_1/behav/questa'
+Program launched (PID=1396)

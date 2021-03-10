@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../hdl/cont_sap.vhd" \
+"../../../../../hdl/ddg.vhd" \
+
+# Do not sort compile order
+nosort

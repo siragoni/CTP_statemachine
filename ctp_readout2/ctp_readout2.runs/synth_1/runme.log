@@ -1,0 +1,601 @@
+
+*** Running vivado
+    with args -log top_tc_statemachine.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_tc_statemachine.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top_tc_statemachine.tcl -notrace
+Command: synth_design -top top_tc_statemachine -part xcku040-ffva1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku040'
+INFO: [Common 17-1540] The version limit for your license is '2018.12' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7256 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 471.180 ; gain = 96.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_tc_statemachine' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:56]
+	Parameter g_NUM_BITS_ON_GBT_WORD bound to: 76 - type: integer 
+	Parameter bits_to_get bound to: 76 - type: integer 
+INFO: [Synth 8-3491] module 'packer' declared at 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:37' bound to instance 'input_data_packer' of component 'packer' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:206]
+INFO: [Synth 8-638] synthesizing module 'packer' [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:56]
+	Parameter bits_to_get bound to: 76 - type: integer 
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:94]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:125]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:127]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:154]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:156]
+WARNING: [Synth 8-614] signal 'clk_en_i' is read in the process but is not in the sensitivity list [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element store_count_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element write_flag_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:78]
+WARNING: [Synth 8-6014] Unused sequential element new_store_count_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'packer' (1#1) [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/packer.vhd:56]
+INFO: [Synth 8-3491] module 'tc_fifo' declared at 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/.Xil/Vivado-4768-DESKTOP-T9I20SI/realtime/tc_fifo_stub.vhdl:5' bound to instance 'tc_fifo_inst' of component 'tc_fifo' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'tc_fifo' [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/.Xil/Vivado-4768-DESKTOP-T9I20SI/realtime/tc_fifo_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'buffer_fifo' declared at 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:37' bound to instance 'buffer_from_fifo' of component 'buffer_fifo' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'buffer_fifo' [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:47]
+WARNING: [Synth 8-614] signal 's_store_count' is read in the process but is not in the sensitivity list [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:89]
+WARNING: [Synth 8-6014] Unused sequential element store_count_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'buffer_fifo' (2#1) [C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/new/buffer_fifo.vhd:47]
+INFO: [Synth 8-3491] module 'tc_statemachine' declared at 'C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:18' bound to instance 'tc_state_machine' of component 'tc_statemachine' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'tc_statemachine' [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element trgmaskedpre_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:399]
+WARNING: [Synth 8-6014] Unused sequential element trgmaskedorpre_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:405]
+WARNING: [Synth 8-6014] Unused sequential element TTVALID_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:418]
+WARNING: [Synth 8-6014] Unused sequential element s_trgd_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:438]
+WARNING: [Synth 8-6014] Unused sequential element s_last_ttype_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:911]
+WARNING: [Synth 8-6014] Unused sequential element s_last_orbit_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:912]
+WARNING: [Synth 8-6014] Unused sequential element s_last_bc_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:913]
+WARNING: [Synth 8-6014] Unused sequential element s_hborbit_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:925]
+WARNING: [Synth 8-6014] Unused sequential element s_hbbc_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:926]
+WARNING: [Synth 8-6014] Unused sequential element s_last_trgorbit_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:940]
+WARNING: [Synth 8-6014] Unused sequential element s_last_trgbc_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:941]
+WARNING: [Synth 8-3848] Net i_ev_size in module/entity tc_statemachine does not have driver. [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'tc_statemachine' (3#1) [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:196]
+INFO: [Synth 8-256] done synthesizing module 'top_tc_statemachine' (4#1) [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/top_tc_statemachine.vhd:56]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[118]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[117]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[116]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[115]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[114]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[113]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[112]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[111]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[110]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[109]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[108]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[107]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[106]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[105]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[104]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[103]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[102]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[101]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[100]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[99]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[98]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[97]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[96]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[95]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[94]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[93]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[92]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[91]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[90]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[89]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[88]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[87]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[86]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[85]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[84]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[83]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[82]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[81]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[80]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[79]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[78]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[77]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[76]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[75]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[74]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[73]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[72]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[71]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[70]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[69]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[68]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[67]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[66]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[65]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[64]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[63]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[62]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[61]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[60]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[59]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[58]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[57]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[56]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[55]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[54]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[53]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[52]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[51]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[50]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[49]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[48]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[47]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[46]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[45]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[44]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[43]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[42]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[41]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[40]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[39]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[38]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[37]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[36]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[35]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[34]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[33]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[32]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[31]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[30]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[29]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[28]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[27]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[26]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[25]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[24]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[23]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[22]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[21]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[20]
+WARNING: [Synth 8-3331] design tc_statemachine has unconnected port trg_i[19]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 528.168 ; gain = 153.555
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 528.168 ; gain = 153.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 528.168 ; gain = 153.555
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku040-ffva1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/ip/tc_fifo/tc_fifo/tc_fifo_in_context.xdc] for cell 'tc_fifo_inst'
+Finished Parsing XDC File [c:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.srcs/sources_1/ip/tc_fifo/tc_fifo/tc_fifo_in_context.xdc] for cell 'tc_fifo_inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1098.563 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1098.563 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1098.563 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1098.563 ; gain = 723.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku040-ffva1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1098.563 ; gain = 723.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for tc_fifo_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1098.563 ; gain = 723.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "data_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Simone Ragoni/alice/CtpReadout/hdl/tc_statemachine.vhd:804]
+INFO: [Synth 8-802] inferred FSM for state register 's_cs_reg' in module 'tc_statemachine'
+INFO: [Synth 8-5546] ROM "s_no_idle_btw_events" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data_rd_fifo" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_max_idle_btw_events" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wasEOx" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_plcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "u_page_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_ns" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                send_sop |                             0001 |                             0001
+          send_rdh_word0 |                             0010 |                             0010
+          send_rdh_word1 |                             0011 |                             0011
+          send_rdh_word2 |                             0100 |                             0100
+          send_rdh_word3 |                             0101 |                             0101
+        wait_for_trigger |                             0110 |                             0110
+               send_data |                             0111 |                             0111
+                send_eop |                             1000 |                             1000
+                 new_rdh |                             1001 |                             1001
+               send_idle |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_cs_reg' using encoding 'sequential' in module 'tc_statemachine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1098.563 ; gain = 723.949
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 5     
+	   2 Input      9 Bit       Adders := 5     
++---Registers : 
+	              200 Bit    Registers := 1     
+	               83 Bit    Registers := 3     
+	               80 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input    200 Bit        Muxes := 14    
+	   2 Input     83 Bit        Muxes := 5     
+	   4 Input     80 Bit        Muxes := 1     
+	   8 Input     80 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	   6 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	  28 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 27    
+	   3 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module packer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	              200 Bit    Registers := 1     
+	               83 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    200 Bit        Muxes := 14    
+	   2 Input     83 Bit        Muxes := 5     
+	   4 Input     80 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module buffer_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               83 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+Module tc_statemachine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               80 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   8 Input     80 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 9     
+	   6 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 2     
+	  28 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 20    
+	   3 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1920 (col length:120)
+BRAMs: 1200 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "data_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tc_state_machine/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tc_state_machine/s_no_idle_btw_events" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tc_state_machine/s_last_word_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tc_state_machine/s_send_data_reg )
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[6]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[7]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[8]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[9]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[10]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[0]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[1]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[1]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[2]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[2]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[3]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[4]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/i_max_idle_btw_events_reg[4]' (FDRE) to 'tc_state_machine/i_max_idle_btw_events_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tc_state_machine/i_max_idle_btw_events_reg[5] )
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[0]' (FDRE) to 'tc_state_machine/s_ttype_reg[8]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[1]' (FDSE) to 'tc_state_machine/s_ttype_reg[2]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[2]' (FDSE) to 'tc_state_machine/s_ttype_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[3]' (FDSE) to 'tc_state_machine/s_ttype_reg[4]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[4]' (FDSE) to 'tc_state_machine/s_ttype_reg[5]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[5]' (FDSE) to 'tc_state_machine/s_ttype_reg[6]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[6]' (FDSE) to 'tc_state_machine/s_ttype_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[7]' (FDSE) to 'tc_state_machine/s_ttype_reg[9]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[8]' (FDRE) to 'tc_state_machine/s_ttype_reg[10]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[9]' (FDSE) to 'tc_state_machine/s_ttype_reg[11]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[10]' (FDRE) to 'tc_state_machine/s_ttype_reg[12]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[11]' (FDSE) to 'tc_state_machine/s_ttype_reg[14]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[12]' (FDRE) to 'tc_state_machine/s_ttype_reg[13]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[13]' (FDRE) to 'tc_state_machine/s_ttype_reg[16]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[14]' (FDSE) to 'tc_state_machine/s_ttype_reg[15]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[15]' (FDSE) to 'tc_state_machine/s_ttype_reg[17]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[16]' (FDRE) to 'tc_state_machine/s_ttype_reg[24]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[17]' (FDSE) to 'tc_state_machine/s_ttype_reg[18]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[18]' (FDSE) to 'tc_state_machine/s_ttype_reg[19]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[19]' (FDSE) to 'tc_state_machine/s_ttype_reg[20]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[20]' (FDSE) to 'tc_state_machine/s_ttype_reg[21]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[21]' (FDSE) to 'tc_state_machine/s_ttype_reg[22]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[22]' (FDSE) to 'tc_state_machine/s_ttype_reg[23]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[23]' (FDSE) to 'tc_state_machine/s_ttype_reg[25]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[24]' (FDRE) to 'tc_state_machine/s_ttype_reg[26]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[25]' (FDSE) to 'tc_state_machine/s_ttype_reg[27]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[26]' (FDRE) to 'tc_state_machine/s_ttype_reg[28]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[27]' (FDSE) to 'tc_state_machine/s_ttype_reg[30]'
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[28]' (FDRE) to 'tc_state_machine/s_ttype_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tc_state_machine/s_ttype_reg[29] )
+INFO: [Synth 8-3886] merging instance 'tc_state_machine/s_ttype_reg[30]' (FDSE) to 'tc_state_machine/s_ttype_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\tc_state_machine/s_ttype_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1192.992 ; gain = 818.379
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1259.785 ; gain = 885.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1262.020 ; gain = 887.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1347.207 ; gain = 972.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1347.207 ; gain = 972.594
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1347.207 ; gain = 972.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1347.207 ; gain = 972.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1347.207 ; gain = 972.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1347.207 ; gain = 972.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1347.207 ; gain = 972.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name         | RTL Name                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_tc_statemachine | tc_state_machine/EOx_reg   | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_tc_statemachine | tc_state_machine/HB_reg    | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_tc_statemachine | tc_state_machine/s_trg_reg | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top_tc_statemachine | tc_state_machine/SOx_reg   | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++--------------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |tc_fifo       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |tc_fifo_bbox_0 |     1|
+|2     |BUFG           |     1|
+|3     |CARRY8         |    10|
+|4     |LUT1           |     8|
+|5     |LUT2           |    89|
+|6     |LUT3           |   218|
+|7     |LUT4           |   484|
+|8     |LUT5           |   329|
+|9     |LUT6           |  1293|
+|10    |SRL16E         |     4|
+|11    |FDRE           |   649|
+|12    |FDSE           |    12|
+|13    |IBUF           |   122|
+|14    |OBUF           |    81|
++------+---------------+------+
+
+Report Instance Areas: 
++------+--------------------+----------------+------+
+|      |Instance            |Module          |Cells |
++------+--------------------+----------------+------+
+|1     |top                 |                |  3389|
+|2     |  buffer_from_fifo  |buffer_fifo     |   193|
+|3     |  input_data_packer |packer          |  2531|
+|4     |  tc_state_machine  |tc_statemachine |   372|
++------+--------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1347.207 ; gain = 972.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 118 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1347.207 ; gain = 402.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1347.207 ; gain = 972.594
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 133 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1353.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 123 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 122 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+95 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1353.934 ; gain = 980.359
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1353.934 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Simone Ragoni/alice/CtpReadout/ctp_readout2/ctp_readout2.runs/synth_1/top_tc_statemachine.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_tc_statemachine_utilization_synth.rpt -pb top_tc_statemachine_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  3 16:09:04 2021...
